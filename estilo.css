@@ -1,0 +1,213 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/*-----------CONTAINER-----------*/
+.container {
+
+    background-color: bisque;
+    width: 400px;
+    height: 800px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    justify-content: center;
+}
+
+/*-----------SELEÇÃO PIX OU CRÉDITO-----------*/
+
+
+input[type="valor"] {
+
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 300px;
+    height: 20px;
+    font-size: 16px;
+    box-shadow: none;
+    margin: 10px;
+
+}
+
+label {
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.selecionar {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*-----------BOTÕES-----------*/
+
+.btInformarDados {
+
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+/*-----------PIX-----------*/
+
+#dadosPix {
+
+    display: none;
+    margin-top: 20px;
+    background-color: white;
+    width: 350px;
+    height: 100px;
+
+}
+
+#tituloPix {
+
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+/*-----------CARTÃO DE CRÉDITO-----------*/
+
+#dadosCredito {
+
+    display: none;
+    margin-top: 20px;
+    background-color: white;
+    width: 350px;
+    height: 400px;
+
+}
+
+#tituloCredito {
+
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+#numeroCartao {
+
+    border: 1px solid black;
+    width: 150px;
+    height: 20px;
+    font-size: 16px;
+    box-shadow: none;
+    margin: 10px;
+
+}
+
+#titularCartao {
+
+    border: 1px solid black;
+    width: 250px;
+    height: 20px;
+    font-size: 16px;
+    box-shadow: none;
+    margin: 10px;
+
+}
+
+#codigoSeguranca {
+
+    border: 1px solid black;
+    width: 158px;
+    height: 20px;
+    font-size: 16px;
+    box-shadow: none;
+    margin: 10px;
+
+}
+
+#dataVencimento {
+
+    border: 1px solid black;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    box-shadow: none;
+    margin: 10px;
+
+}
+
+select {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 230px;
+    height: 20px;
+    font-size: 16px;
+    box-shadow: none;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+.parcelamento {
+
+    display: flex;
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 330px;
+    height: 100px;
+    position: relative;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+#valorParcela1,
+#valorParcela2,
+#valorParcela3,
+#valorParcela4,
+#valorParcela5 {
+
+    font-size: 20px;
+    padding: 5px;
+}
+
+#visa{
+
+    display: none;
+    position: relative;
+    left: 15px;
+    top: 15px
+
+}
+
+#mastercard{
+
+    display: none;
+    position: relative;
+    left: 15px;
+    top: 15px
+
+}
+
+#totalPagar{
+
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 20px;
+    left: 250px;
+    font-size: 25px;
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Captura informação de valor e seleção de PIX ou CARTÃO DE CRÉDITO -->
+        <div class="selecao">
+
+            <label for="valor">Valor: </label>
+            <input type="valor" id="valor" />
+
+            <div class="selecionar">
+
+                <div class="pix">
+                    <input type="radio" name="radiobuttom" id="pix" />
+                    <label for="radio"> PIX </label>
+                </div>
+
+                <div class="credito">
+                    <input type="radio" name="radiobuttom" id="credito" />
+                    <label for="radio"> Cartão de Crédito </label>
+                </div>
+
+            </div>
+            <button class="btInformarDados" onclick="InformarDados()">Informar Dados</button>
+        </div>
+
+
+        <!--INFORMAÇÕES SOBRE PIX-->
+        <div id="dadosPix">
+
+            <h2 id="tituloPix"> PIX </h2>
+
+            <label for="cpf"> CPF: </label>
+            <input type="cpf" id="cpf" />
+
+
+        </div>
+
+        <!--INFORMAÇÕES SOBRE CARTÃO DE CRÉDITO-->
+        <div id="dadosCredito">
+
+            <h2 id="tituloCredito">CARTÃO DE CRÉDITO</h2>
+
+            <div class="numCartao">
+                <label for="numeroCartao">Número:</label>
+                <input type="text" id="numeroCartao" name="numeroCartao" onblur="verificaNumeroCartao()">
+                <img src="/img/mastercard.png" width="50px" height="50px" id="mastercard">
+                <img src="/img/visa.png" width="50px" height="50px" id="visa">
+                <p id="validaCartao"></p>
+            </div>
+
+            <div>
+                <label for="titularCartao">Titular: </label>
+                <input type="text" id="titularCartao" name="titularCartao">
+            </div>
+
+            <div>
+                <label for="codigoSeguranca">Cód. Segurança: </label>
+                <input type="text" id="codigoSeguranca" name="codigoSeguranca">
+            </div>
+
+            <div>
+                <label for="dataVencimento">Vencimento:</label>
+                <input type="text" id="dataVencimento" name="dataVencimento">
+            </div>
+
+            <label for="parcelas">Parcelas: </label>
+            <select id="parcelas">
+                <option value="1">1 Parcela</option>
+                <option value="2">2 Parcelas</option>
+                <option value="3">3 Parcelas</option>
+                <option value="4">4 Parcelas</option>
+                <option value="5">5 Parcelas</option>
+            </select>
+
+            <div class="parcelamento">
+                <p id="valorParcela1"> 1x R$00.00 </p>
+                <p id="valorParcela2"> 2x R$00.00 </p>
+                <p id="valorParcela3"> 3x R$00.00 </p>
+                <p id="valorParcela4"> 4x R$00.00 </p>
+                <p id="valorParcela5"> 5x R$00.00 </p>
+            </div>
+
+        </div>
+
+        <p id="totalPagar"> Total: R$00.00 </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
